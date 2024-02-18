@@ -1,0 +1,253 @@
+body {
+    font-family: inherit,sans-serif  ;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-decoration-color: currentcolor;
+    text-decoration-thickness: auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    font-weight: 400;
+    margin: 0;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para a Notícia Principal (Caramelo AI) */
+article.main-news {
+    display: flex;
+    /*border: 2px solid #000;*/
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 1em auto; /* Adiciona margem para centralizar e criar espaço superior e inferior */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Ajuste conforme necessário */
+}
+
+article.main-news:hover {
+    transform: scale(1.05);
+}
+
+article.main-news img {
+    width: 70%; /* Ajuste conforme necessário */
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+article.main-news .main-news-text {
+    flex-grow: 1;
+    padding: 1em;
+}
+
+
+article h2,
+article p {
+    color: #000;
+}
+
+article a {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+article a:hover {
+    background-color: #333;
+}
+
+/* Ajuste para as notícias 1, 2 e 3 ficarem ao lado uma da outra */
+.other-news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.other-news article {
+    width: calc(33.33% - 2em);
+    margin-bottom: 1em;
+}
+
+/* Ajuste diretamente a largura das imagens */
+.other-news article img {
+    width: 100%; /* Ajuste conforme necessário */
+    height: auto;
+    max-height: 200px; /* Defina a altura máxima conforme necessário */
+    object-fit: cover;
+}
+
+/* Adiciona espaçamento entre o título e o parágrafo */
+article h2 {
+    margin-bottom: 10px; /* Adicione a margem inferior desejada */
+}
+
+article img {
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.back-button,
+.read-more-button {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover,
+.read-more-button:hover {
+    background-color: #333;
+}
+
+.back-button {
+    margin: 1em auto;
+    display: block;
+}
+
+.story img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+    border: solid 2px #344fd8;
+    padding: 3px;
+}
+
+/* Participantes container */
+.participants-container {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Web Stories title */
+.web-stories-title {
+    background: #151515;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Individual participant */
+.participant {
+    cursor: pointer;
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image style */
+.participant img {
+    width: 225px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Caption style */
+.participant figcaption {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Estilo para botões */
+.custom-button {
+    background-color: #000;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.custom-button:hover {
+    background-color: #333;
+}
+
+/* Adicione este estilo no seu arquivo de estilo (estilo_index.css) ou em um bloco de estilo interno */
+#propaganda {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+#propaganda img {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem */
+}
+
+#mostrarPropaganda {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #ff880052;
+    color: #914600;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,85 @@
+body {
+    font-family: inherit,sans-serif  ;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+h1 {
+    font-family: 'Forbes', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+    padding: 1em;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+article h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+article h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+article p {
+    color: #555;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.back-button,
+.read-more-button {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-button:hover,
+.read-more-button:hover {
+    background-color: #555;
+}
+
+.back-button {
+    margin: 1em auto; /* Adicionado para centralizar o botão */
+    display: block; /* Adicionado para centralizar o botão */
+}
